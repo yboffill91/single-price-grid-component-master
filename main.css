@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan80: hsla(179, 62%, 43%,0.5);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+body{
+    background-color: var(--lightGray);
+}
+.contenedor{
+    width: 95%;
+    max-width: 570px;
+    display: grid;
+    margin: 50px auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+}
+.main{
+    grid-column: span 2;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 15px 20px;
+}
+.main h1{
+    font-size: 22px;
+    color:var(--cyan);
+    padding: 15px 0px;
+    font-weight: 700;
+}
+.main h2{
+    font-size: 20px;
+    color: var(--brightYellow);
+    padding-bottom: 15px;
+}
+.main p{
+    padding-bottom: 25px;
+    color: var(--grayishBlue);
+    line-height: 1.5em;
+}
+.monthly{
+    background-color: var(--cyan);
+    border-radius: 0px 0px 0px 5px;
+    color: var(--lightGray);
+    padding: 15px 20px;
+}
+.monthly h1{
+    font-size: 17px;
+    padding: 15px 0px;
+    font-weight: 700;
+}
+.monthly h2{
+    font-size: 36px;
+    padding: 15px 0px 5px 0px;
+}
+.monthly p{
+    padding: 15px 0px 5px 0px;
+    font-weight: 700;
+}
+.per{
+    color: hsla(204, 43%, 93%,0.7); ;
+}
+.monthly div{
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color:var(--brightYellow);
+    width: 90%;
+    height: 40px;
+    margin: 20px auto;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    color: var(--lightGray);
+    box-shadow: 2px 2px 5px rgb(43, 49, 34) ;
+}
+.whyus{
+    grid-column-start: 2;
+    background-color: var(--cyan80);
+    color: var(--lightGray);
+    border-radius: 0px 0px 5px 0px;
+    padding: 15px 20% 15px 15px;
+}
+.whyus h1{
+    font-size: 17px;
+    padding: 15px 0px;
+    font-weight: 700;
+}
+.whyus p{
+    padding: 15px 0px 5px 0px;
+    line-height: 1.5em;
+}
+@media screen and (max-width: 576px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px auto;
+    }
+    .monthly{
+        border-radius: 0px;
+        width: 100%;
+    }
+    .whyus{
+        border-radius: 0px 0px 5px 5px;
+    }
+}
